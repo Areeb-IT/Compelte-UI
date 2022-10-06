@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { StyleSheet } from "react-native";
+
 export const Styles = StyleSheet.create({
   button: {
     alignItems: "center",
@@ -9,6 +9,7 @@ export const Styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 40,
   },
+
   buttonText: {
     fontSize: 20,
     fontWeight: "bold",
@@ -21,8 +22,8 @@ export const Styles = StyleSheet.create({
   },
   textInput: {
     borderColor: "#868686",
-    borderBottomWidth: 2,
     width: "100%",
+    height: 30,
   },
   textInputText: {
     color: "#868686",

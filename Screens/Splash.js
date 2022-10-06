@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import Button from "../Components/Button";
 import { Styles } from "../Components/Style";
@@ -14,7 +14,9 @@ const Splash = ({ navigation }) => {
           source={require("../assets/11.png")}
         />
       </View>
-      <Button title="Get Started" naviate="Login" bgc="#5956E9" txt="white" />
+      <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+        <Button title="Get Started" naviate="Login" bgc="#5956E9" txt="white" />
+      </TouchableOpacity>
     </View>
   );
 };

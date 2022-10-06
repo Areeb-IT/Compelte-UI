@@ -9,24 +9,21 @@ export const Button = (props) => {
   const text = props.txt;
 
   return (
-    <View style={{ marginTop: 30 }}>
-      <TouchableOpacity
-        onPress={() => navigation.navigate(props.naviate)}
-        style={[
-          Styles.button,
-          { backgroundColor: bgclr == "#5956E9" ? "white" : "#5956E9" },
-        ]}
+    <View
+      style={[
+        Styles.button,
+        { backgroundColor: bgclr == "#5956E9" ? "white" : "#5956E9" },
+      ]}
+    >
+      <Text
+        style={{
+          fontSize: 20,
+          fontWeight: "bold",
+          color: text == "white" ? "#5956E9" : "white",
+        }}
       >
-        <Text
-          style={{
-            fontSize: 20,
-            fontWeight: "bold",
-            color: text == "white" ? "#5956E9" : "white",
-          }}
-        >
-          {name}
-        </Text>
-      </TouchableOpacity>
+        {name}
+      </Text>
     </View>
   );
 };
